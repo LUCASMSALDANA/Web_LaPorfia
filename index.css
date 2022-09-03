@@ -161,6 +161,9 @@ header a:hover{
     text-align: center;
     padding: 100px 12px;
 }
+#otras-actividades ul{
+    padding: 0;
+}
 #otras-actividades li{
     margin: 12px;
     font-weight: bold;
