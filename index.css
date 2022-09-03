@@ -8,7 +8,7 @@ html{
 body{
     margin: 0;
     font-family: 'Anek Telugu', sans-serif;
-    background: rgb(241,170,77);
+    background: #fcfcd5
 }
 
 h1{font-size: 3.4em;}
@@ -39,6 +39,7 @@ button:hover{
 }
 .titulo-laporfia{color: white; 
     font-family: 'Tangerine', serif;
+    text-shadow: 0px 0px 5px black;
 }
 
 header{
@@ -192,6 +193,21 @@ header a:hover{
 #escribinos button{
     font-size: 5vw;
 }
+
+#ubicacion{
+    padding: 50px;
+    text-align: center;
+}
+.seccion-mapa p{
+    font-size: 1.0em;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.mapa{
+    width: 100%;
+}
+
 
 /*Footer*/
 footer{
