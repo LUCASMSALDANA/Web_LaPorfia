@@ -8,7 +8,7 @@ html{
 body{
     margin: 0;
     font-family: 'Anek Telugu', sans-serif;
-    background: #fcfcd5
+    background: #fcfcde
 }
 
 h1{font-size: 3.4em;}
@@ -55,6 +55,10 @@ header .logotxt{
     flex-direction: row;
     align-items: center;
 }
+.logotxt .logo{
+    padding-right: 0;
+}
+
 header .logo-footer{
     height: 60px;
 }
@@ -82,14 +86,17 @@ header nav{
 }
 
 header a {
-    padding: 0 12px;
+    padding: 0 8px;
     text-decoration: none;
     font-weight: bold;
     color: white;
+    font-size: 0.95em;
 }
 
 header a:hover{
-    color: rgb(255, 255, 255);
+    transition: 300ms;
+    color: antiquewhite;
+    text-shadow: 0px 0px 15px black;
 }
 
 #hero{
@@ -198,6 +205,9 @@ header a:hover{
     padding: 50px;
     text-align: center;
 }
+#ubicacion h2{
+    margin-top: 0px;
+}
 .seccion-mapa p{
     font-size: 1.0em;
     margin: 0px;
@@ -206,9 +216,49 @@ header a:hover{
 
 .mapa{
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+   
+#contacto{
+    background-color: #741c0c;
+    color: white;
+    text-align: center;
+    padding: 50px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#contacto h2{
+    margin-top: 0px;
+
+}
+#contacto .input-contacto{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1.15em;
+
 }
 
+.input-contacto input{
+    padding: 8px 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    max-width: 400px;
+}
 
+.input-contacto textarea{
+    width: 100%;
+    max-width: 400px;
+    margin: 5px 0 10px 0;
+}
 /*Footer*/
 footer{
     text-align: center;
@@ -226,7 +276,7 @@ footer p{margin: 0px;}
     width: auto;
 }
 
-@media (min-width:720px){
+@media (min-width:740px){
     header{
         position: fixed;
         width: 100%;
@@ -248,23 +298,23 @@ footer p{margin: 0px;}
     }
     
     #la-porfia{
-        height: 100vh;
         display: flex;
         flex-direction: column;
+        height: 100vh;
     }
     #la-porfia .container{
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-evenly;
-        padding: 0;
     }
 
     #la-porfia .img-container{
         background: url("img/laporfia.jpg");
         background-size: cover;
         background-position: center left;
-        height: 500px;
-        width: 500px;
+        height: 480px;
+        width: 480px;
         box-shadow: 2px 2px 10px;
         
     }
@@ -329,4 +379,36 @@ footer p{margin: 0px;}
         box-shadow: 2px 2px 10px;
         
     }
+
+    .ubicontacto{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+     }
+
+    #ubicacion{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+     }
+     #ubicacion .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+     }
+
+     #contacto{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+     }
+     #contacto .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+     }
+
 }

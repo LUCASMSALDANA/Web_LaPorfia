@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header class="myHeader">    
+    <header>    
         <div class="container">
             <div class="logotxt">
             <a href="#hero.html"> <img class="logo-footer" src="https://st2.depositphotos.com/2374833/6789/v/450/depositphotos_67896833-stock-illustration-silhouette-of-horses-head.jpg" alt="La Porfia" ></a>
@@ -18,8 +18,10 @@
         </div>
             <nav>
                 <a href="#la-porfia">Quienes Somos</a>
-                <a href="#experiencias">Nuestras Experiencias</a>
+                <a href="#experiencias">Experiencias</a>
                 <a href="#otras-actividades">Características</a>
+                <a href="#ubicacion">Ubicacion</a>
+                <a href="#contacto">Contacto</a>
             </nav>
         </div>
     </header>
@@ -71,24 +73,40 @@
             <div class="img-cara"></div>
         </div> 
     </section>
+
     <section id="escribinos">
         <h2>Queres saber más?</h2>
-        <button>ESCRIBINOS</button>
+        <a href="#contacto"><button>ESCRIBINOS</button></a> 
     </section>
-
+    <div class="ubicontacto">
     <section id="ubicacion">
         <div class="container">
             <div class="seccion-mapa">
                 <h2>Nuestra Ubicación</h2>
                 <p>Estamos ubicados a unos kilometros de la ciudad de Navarro</p>
-                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26147.195032106873!2d-59.32725433951925!3d-34.996706389480245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc4566d3a8c2c5%3A0x31e14de9db0cc0d4!2sParque%20Dorrego!5e0!3m2!1ses-419!2sar!4v1662224365606!5m2!1ses-419!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div id="contacto">
-                <form action=""></form>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.651964739823!2d-59.40320068422054!3d-34.940264582890784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x61236753fd23c22c!2zMzTCsDU2JzI1LjAiUyA1OcKwMjQnMDMuNiJX!5e0!3m2!1ses-419!2sar!4v1662229337687!5m2!1ses-419!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
             </div>
         </div>
     </section>
+    <section id="contacto">
+            <h2>Contacto</h2>
+            <form class="input-contacto" action="">
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido">
 
+                <label for="email">Correo electronico</label>
+                <input type="email" name="" id="email">
+
+                <label for="tel">Telefono</label>
+                <input type="tel" name="" id="tel">
+
+                <label for="mensaje"></label>
+                <textarea id="mensaje" cols="30" rows="10"></textarea>
+
+                <input type="submit">
+            </form>
+    </section>
+</div>
     <footer>
         <div class="container">
             <a href="#hero.html"> <img class="logo-footer" src="https://st2.depositphotos.com/2374833/6789/v/450/depositphotos_67896833-stock-illustration-silhouette-of-horses-head.jpg" alt="La Porfia" ></a>
