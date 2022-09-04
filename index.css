@@ -106,9 +106,9 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     padding: 15px 0px;
-    max-height: 720px;
 }
 #hero video{
+    max-height: 85vh;
     width: 100%;
     border-radius: 10px;
     box-shadow: 1px 1px 10px black;
@@ -301,6 +301,7 @@ footer p{margin: 0px;}
         display: flex;
         flex-direction: column;
         height: 100vh;
+        min-height: 500px;
     }
     #la-porfia .container{
         display: flex;
@@ -334,6 +335,7 @@ footer p{margin: 0px;}
         display: flex;
         flex-direction: column;
         height: 100vh;
+        min-height: 500px;
     }
     #experiencias .programas{
         display: flex;
@@ -356,12 +358,14 @@ footer p{margin: 0px;}
         display: flex;
         flex-direction: column;
         height: 100vh;
+        min-height: 500px;
      }
      #otras-actividades .container{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        min-height: 500px;
      }
      #otras-actividades ul{
         text-align: initial;
@@ -398,11 +402,16 @@ footer p{margin: 0px;}
         align-items: center;
         justify-content: space-evenly;
      }
-
+     #ubicacion .mapa{
+        height: 100%;
+     }
      #contacto{
         display: flex;
         flex-direction: column;
         width: 50%;
+     }
+     #contacto .input-contacto{
+        height: 100%;
      }
      #contacto .container{
         display: flex;
