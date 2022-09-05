@@ -8,7 +8,9 @@ html{
 body{
     margin: 0;
     font-family: 'Anek Telugu', sans-serif;
-    background: #fcfcde
+    /*background: #edd8be;*/
+    background-color: #ece7bd;
+    
 }
 
 h1{font-size: 3.4em;}
@@ -25,7 +27,7 @@ button{
     border: none;
     box-shadow:3px 3px 10px rgba(0,0,0,0.6);
     color: white;
-    background-color: #741c0c;
+    background-color: #4d120d;
 }
 
 button:hover{
@@ -43,7 +45,7 @@ button:hover{
 }
 
 header{
-    background-color: #741c0c ;
+    background-color: #4d120d;
 }
 .logotxt a{
     padding-left: 10px;
@@ -106,6 +108,7 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     padding: 15px 0px;
+    
 }
 #hero video{
     max-height: 85vh;
@@ -124,7 +127,7 @@ header a:hover{
 }
 
 #experiencias{
-    background-color: #741c0c ;
+    background-color: #4d120d;
     color: white;
     text-align: center;
 }
@@ -221,7 +224,7 @@ header a:hover{
 }
    
 #contacto{
-    background-color: #741c0c;
+    background-color: #4d120d;
     color: white;
     text-align: center;
     padding: 50px;    
