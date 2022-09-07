@@ -17,7 +17,7 @@ h1{font-size: 3.4em;}
 h2{font-size: 2.5em;}
 h3{font-size: 2em;}
 p{font-size: 1.25em;}
-ul{list-style:none ;}
+ul{list-style: none ;}
 
 button{
     font-size: 1.3em;
@@ -31,8 +31,13 @@ button{
 }
 
 button:hover{
-    transition: 600ms;
-    background-color: rgb(241,170,77);
+    transition: 500ms;
+    background-color: #ece7bd;
+    color: #4d120d;
+}
+button:active{
+    transition: ms;
+    color: #599184;
 }
 
 .container{
@@ -93,12 +98,30 @@ header a {
     font-weight: bold;
     color: white;
     font-size: 0.95em;
+    position: relative;
+}
+
+header a::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 50%;
+    background-color: #599184;
+    width: 0%;
+    margin: 0 auto;
+    height: 2px;
+    transition: 600ms;
+    opacity: 0;
 }
 
 header a:hover{
     transition: 300ms;
-    color: antiquewhite;
-    text-shadow: 0px 0px 15px black;
+    color: #599184;
+}
+header a:hover::after{
+ opacity: 1;
+ left: 10%;
+ width: 80%;
 }
 
 #hero{
@@ -153,7 +176,7 @@ header a:hover{
 }
 #experiencias .carta:hover{
     transition: 500ms;
-    box-shadow: 2px 2px 10px rgb(241,170,77);
+    box-shadow: 2px 2px 10px #ece7bd;
 }
 
 .carta:first-child{
@@ -239,13 +262,12 @@ header a:hover{
 
 }
 #contacto .input-contacto{
-    margin: 0px auto;
+    margin: 5px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     font-size: 1.15em;
-
 }
 
 .input-contacto input{
@@ -262,6 +284,23 @@ header a:hover{
     max-width: 400px;
     margin: 5px 0 10px 0;
 }
+
+
+
+.whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background: none;
+}
+
+.wapp-logo:hover{
+    transition: 500ms;
+    filter: drop-shadow(0px 0px 5px #ece7bd);
+}   
+
+
 /*Footer*/
 footer{
     text-align: center;
@@ -404,6 +443,7 @@ footer p{margin: 0px;}
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        height: 70%;
      }
      #ubicacion .mapa{
         height: 100%;
@@ -414,7 +454,6 @@ footer p{margin: 0px;}
         width: 50%;
      }
      #contacto .input-contacto{
-        height: 100%;
      }
      #contacto .container{
         display: flex;
