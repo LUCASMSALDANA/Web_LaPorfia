@@ -90,10 +90,11 @@ header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
+    gap: 10px;
 }
 
 header a {
-    padding: 0 8px;
+    padding: 0 0;
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -285,21 +286,23 @@ header a:hover::after{
     margin: 5px 0 10px 0;
 }
 
-
-
 .whatsapp{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
     margin: 0px;
     background: none;
+}
+.whatsapp a{
+    text-decoration: none;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: 500m
 }
 
 .wapp-logo:hover{
     transition: 500ms;
     filter: drop-shadow(0px 0px 5px #ece7bd);
-}   
-
+}
 
 /*Footer*/
 footer{
