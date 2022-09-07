@@ -301,7 +301,7 @@ header a:hover::after{
 
 .wapp-logo:hover{
     transition: 500ms;
-    filter: drop-shadow(0px 0px 5px #ece7bd);
+    filter: drop-shadow(0px 0px 5px #ece7bd);   
 }
 
 /*Footer*/
