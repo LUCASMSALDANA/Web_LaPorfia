@@ -79,6 +79,13 @@ header .logo{
     color: white;
     text-shadow: 1px 1px 15px rgba(0,0,0,0.6);
 }
+  
+  .change {
+    animation-name: change;
+    animation-duration: 1s;
+    animation-direction: alternate;
+  }
+
 header .container{
     max-width: 1400px;
     display: flex;
