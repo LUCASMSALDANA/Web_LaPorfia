@@ -36,7 +36,7 @@ button:hover{
     color: #4d120d;
 }
 button:active{
-    transition: ms;
+    transition: 500ms;
     color: #599184;
 }
 
@@ -110,7 +110,7 @@ header a {
     position: relative;
 }
 
-header a::after{
+nav a::after{
     content: '';
     position: absolute;
     top: calc(100% + 4px);
@@ -367,23 +367,29 @@ footer p{margin: 0px;}
         background: url("img/laporfia.jpg");
         background-size: cover;
         background-position: center left;
-        height: 480px;
-        width: 480px;
+        height: 440px;
+        width: 440px;
         box-shadow: 2px 2px 10px;
+        transition: 300ms;
         
     }
     #la-porfia h2{margin:0px ;}
    
     #la-porfia .text{
-        width: 50%;
+        transition: 400ms;
+        width: 65%;
         max-width: 500px;
         text-align: initial;
         padding-left: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
+    #la-porfia p{
+        transition: 200ms;
+        font-size: 2.3vw;
+    }
+
     #experiencias {
         display: flex;
         flex-direction: column;
@@ -473,4 +479,18 @@ footer p{margin: 0px;}
         justify-content: space-evenly;
      }
 
+}
+
+@media (min-width:920px){
+    #la-porfia .img-container{
+        height: 440px;
+        width: 440px;
+    }
+
+    #la-porfia .text{
+        width: 50%;
+    }
+    #la-porfia p{
+        font-size: 1.25em;
+    }
 }
